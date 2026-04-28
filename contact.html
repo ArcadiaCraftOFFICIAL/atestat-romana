@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Atestat România</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">🇷🇴 România</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Acasă</a></li>
+      <li><a href="istorie.html">Istorie</a></li>
+      <li><a href="turism.html">Turism</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flag Strip -->
+<div class="flag-strip"><div class="blue"></div><div class="yellow"></div><div class="red"></div></div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">📧 Pagina de Contact</div>
+    <h1>Contactează-<span>ne</span></h1>
+    <p>Ai întrebări sau sugestii despre proiectul nostru? Completează formularul și îți vom răspunde cât mai curând!</p>
+  </div>
+</section>
+
+<!-- Informații Proiect -->
+<section class="bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>🏫 Informații despre Proiect</h2>
+      <p>Date despre autorul și contextul acestui site</p>
+      <div class="underline"></div>
+    </div>
+    <div class="grid grid-4">
+      <div class="card">
+        <div class="card-icon">🏫</div>
+        <h3>Instituție</h3>
+        <p>Liceul Teoretic "Mihai Eminescu"</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h3>Disciplină</h3>
+        <p>Tehnologia Informației și Comunicațiilor (TIC)</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📅</div>
+        <h3>An școlar</h3>
+        <p>2024 – 2025</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎓</div>
+        <h3>Tip lucrare</h3>
+        <p>Atestat de Competențe Profesionale</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form + Info -->
+<section class="bg-white">
+  <div class="container">
+    <div class="section-title">
+      <h2>📬 Trimite un Mesaj</h2>
+      <p>Completează formularul de mai jos</p>
+      <div class="underline"></div>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>📋 Informații de Contact</h3>
+
+        <div class="contact-detail">
+          <span class="icon">🏫</span>
+          <div>
+            <strong>Școala</strong>
+            Liceul Teoretic "Mihai Eminescu"
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="icon">📍</span>
+          <div>
+            <strong>Adresă</strong>
+            România
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            contact@atestat-romania.ro
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="icon">📚</span>
+          <div>
+            <strong>Disciplina</strong>
+            Tehnologia Informației și Comunicațiilor
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="icon">🎓</span>
+          <div>
+            <strong>Tip proiect</strong>
+            Atestat de Competențe Profesionale — 2025
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <span class="icon">🌐</span>
+          <div>
+            <strong>Tema</strong>
+            România – Geografie, Istorie și Turism
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="form-card">
+        <h3>✉️ Formular de Contact</h3>
+
+        <form id="contactForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nume">Nume complet <span class="req">*</span></label>
+              <input type="text" id="nume" name="nume" placeholder="Ex: Ion Popescu" />
+              <div class="error-msg" id="numeErr">Numele este obligatoriu (minim 3 caractere).</div>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresă email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="Ex: ion@email.com" />
+              <div class="error-msg" id="emailErr">Introduceți o adresă de email validă.</div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefon">Telefon <small style="font-weight:400;color:#6c757d;">(opțional)</small></label>
+              <input type="tel" id="telefon" name="telefon" placeholder="Ex: 0721 234 567" />
+              <div class="error-msg" id="telefonErr">Numărul de telefon nu este valid.</div>
+            </div>
+            <div class="form-group">
+              <label for="subiect">Subiect <span class="req">*</span></label>
+              <select id="subiect" name="subiect">
+                <option value="">— Selectați subiectul —</option>
+                <option value="informatii">Informații generale</option>
+                <option value="turism">Turism în România</option>
+                <option value="istorie">Istorie și cultură</option>
+                <option value="proiect">Detalii despre proiect</option>
+                <option value="colaborare">Colaborare</option>
+                <option value="altele">Altele</option>
+              </select>
+              <div class="error-msg" id="subiectErr">Vă rugăm să selectați un subiect.</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mesaj">Mesaj <span class="req">*</span></label>
+            <textarea id="mesaj" name="mesaj" rows="5" placeholder="Scrieți mesajul dumneavoastră aici..."></textarea>
+            <div class="error-msg" id="mesajErr">Mesajul este obligatoriu (minim 10 caractere).</div>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox-group">
+              <input type="checkbox" id="gdpr" name="gdpr" />
+              <label for="gdpr" style="font-weight:400; cursor:pointer;">
+                Am citit și sunt de acord cu prelucrarea datelor mele cu caracter personal conform <strong>Regulamentului GDPR (UE 2016/679)</strong>. Datele vor fi folosite exclusiv pentru a răspunde mesajului meu.
+                <span class="req">*</span>
+              </label>
+            </div>
+            <div class="error-msg" id="gdprErr">Trebuie să acceptați prelucrarea datelor personale.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            📤 Trimite Mesajul
+          </button>
+
+          <div class="success-msg" id="successMsg">
+            ✅ Mesajul a fost trimis cu succes! Vă vom contacta în cel mai scurt timp.
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Localizare -->
+<section class="bg-light">
+  <div class="container">
+    <div class="section-title">
+      <h2>📍 Localizare</h2>
+      <p>Liceul Teoretic "Mihai Eminescu" — România</p>
+      <div class="underline"></div>
+    </div>
+    <div class="info-block" style="text-align:center; padding: 2.5rem;">
+      <p style="font-size:4rem; margin-bottom:1rem;">🗺️</p>
+      <h3 style="color: var(--blue); font-size:1.4rem; margin-bottom: 0.5rem;">Liceul Teoretic "Mihai Eminescu"</h3>
+      <p style="color: #6c757d; font-size: 1rem;">România 🇷🇴</p>
+      <br>
+      <p style="color: #6c757d;">Proiect realizat în cadrul disciplinei <strong>Tehnologia Informației și Comunicațiilor</strong><br>pentru Atestatul de Competențe Profesionale — an școlar 2024–2025.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <h4>🇷🇴 România</h4>
+      <p>Site realizat pentru atestat la disciplina Tehnologia Informației și Comunicațiilor.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigare</h4>
+      <a href="index.html">Acasă</a><br>
+      <a href="istorie.html">Istorie</a><br>
+      <a href="turism.html">Turism</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Proiect</h4>
+      <p>Atestat Național 2025<br>TIC – România</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2025 Atestat România | Liceul Teoretic "Mihai Eminescu"
+  </div>
+</footer>
+
+<script>
+  (function () {
+    'use strict';
+
+    var form = document.getElementById('contactForm');
+
+    /* ── Helpers ── */
+    function showError(fieldId, errId, show) {
+      var field = document.getElementById(fieldId);
+      var err   = document.getElementById(errId);
+      if (show) {
+        field.classList.add('error');
+        err.classList.add('visible');
+      } else {
+        field.classList.remove('error');
+        err.classList.remove('visible');
+      }
+    }
+
+    function validateEmail(value) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    }
+
+    function validatePhone(value) {
+      /* allow empty (optional), or a Romanian-style phone */
+      if (value === '') return true;
+      return /^[+]?[\d\s\-().]{7,15}$/.test(value);
+    }
+
+    /* ── Real-time validation ── */
+    document.getElementById('nume').addEventListener('input', function () {
+      showError('nume', 'numeErr', this.value.trim().length < 3);
+    });
+
+    document.getElementById('email').addEventListener('input', function () {
+      showError('email', 'emailErr', !validateEmail(this.value.trim()));
+    });
+
+    document.getElementById('telefon').addEventListener('input', function () {
+      showError('telefon', 'telefonErr', !validatePhone(this.value.trim()));
+    });
+
+    document.getElementById('subiect').addEventListener('change', function () {
+      showError('subiect', 'subiectErr', this.value === '');
+    });
+
+    document.getElementById('mesaj').addEventListener('input', function () {
+      showError('mesaj', 'mesajErr', this.value.trim().length < 10);
+    });
+
+    document.getElementById('gdpr').addEventListener('change', function () {
+      showError('gdpr', 'gdprErr', !this.checked);
+    });
+
+    /* ── Submit validation ── */
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      var nume    = document.getElementById('nume').value.trim();
+      var email   = document.getElementById('email').value.trim();
+      var telefon = document.getElementById('telefon').value.trim();
+      var subiect = document.getElementById('subiect').value;
+      var mesaj   = document.getElementById('mesaj').value.trim();
+      var gdpr    = document.getElementById('gdpr').checked;
+
+      var valid = true;
+
+      if (nume.length < 3)           { showError('nume',    'numeErr',    true); valid = false; }
+      else                           { showError('nume',    'numeErr',    false); }
+
+      if (!validateEmail(email))     { showError('email',   'emailErr',   true); valid = false; }
+      else                           { showError('email',   'emailErr',   false); }
+
+      if (!validatePhone(telefon))   { showError('telefon', 'telefonErr', true); valid = false; }
+      else                           { showError('telefon', 'telefonErr', false); }
+
+      if (subiect === '')            { showError('subiect', 'subiectErr', true); valid = false; }
+      else                           { showError('subiect', 'subiectErr', false); }
+
+      if (mesaj.length < 10)         { showError('mesaj',   'mesajErr',   true); valid = false; }
+      else                           { showError('mesaj',   'mesajErr',   false); }
+
+      if (!gdpr)                     { showError('gdpr',    'gdprErr',    true); valid = false; }
+      else                           { showError('gdpr',    'gdprErr',    false); }
+
+      if (valid) {
+        form.reset();
+        /* clear all error states after reset */
+        ['nume','email','telefon','subiect','mesaj','gdpr'].forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el) el.classList.remove('error');
+        });
+        ['numeErr','emailErr','telefonErr','subiectErr','mesajErr','gdprErr'].forEach(function(id) {
+          var el = document.getElementById(id);
+          if (el) el.classList.remove('visible');
+        });
+        var msg = document.getElementById('successMsg');
+        msg.classList.add('visible');
+        setTimeout(function() { msg.classList.remove('visible'); }, 5000);
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
